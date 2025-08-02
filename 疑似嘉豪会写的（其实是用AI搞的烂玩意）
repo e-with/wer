@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广告示例</title>
+    <style>
+        .ad-container {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        .ad-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .ad-content {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .ad-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .ad-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .ad-button:hover {
+            background-color: #45a049;
+        }
+        
+        .ad-close {
+            float: right;
+            cursor: pointer;
+            color: #999;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <span class="ad-close" onclick="this.parentElement.style.display='none'">×</span>
+        <div class="ad-header">特别优惠</div>
+        <img src="https://via.placeholder.com/300x150" alt="广告图片" class="ad-image">
+        <div class="ad-content">
+            限时优惠！立即购买享受8折折扣，优惠码：SAVE20。点击下方按钮了解更多详情。
+        </div>
+        <a href="#" class="ad-button">立即购买</a>
+    </div>
+
+    <script>
+        // 可以在这里添加更多交互功能
+        document.querySelector('.ad-button').addEventListener('click', function() {
+            alert('感谢您的点击！将跳转到产品页面。');
+        });
+    </script>
+</body>
+</html
